@@ -1,0 +1,70 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  cursor: default;
+}
+
+.button {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+}
+
+.toggle-btn {
+  z-index: 3;
+  background: transparent;
+  border: none;
+  outline: 0;
+  margin: 15px auto 15px;
+  .icon-bar {
+    display: block;
+    width: 30px;
+    margin-bottom: 4px;
+    height: 3px;
+    background-color: black;
+    border-radius: 32px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.section-subtitle {
+  padding-top: 90px;
+  color: @blue;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  body{
+    font-size: 16px;
+  }
+
+  .section-subtitle {
+    padding-top: 50px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+}
