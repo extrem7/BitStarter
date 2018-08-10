@@ -6,6 +6,18 @@
   padding: 45px 0 30px;
   border-right: 1px solid #4b41fb;
   min-height: ~"calc(100vh - 140px)";
+  .toggle-btn {
+    top: 140px;
+    &.active span:first-child{
+      top: 9px;
+    }
+    span {
+      background-color: @blue;
+      width: 40px;
+     // margin-bottom: 4px;
+      height: 4px;
+    }
+  }
   .balance {
     margin-bottom: 30px;
     .title {
@@ -266,6 +278,7 @@
 @media all and (max-width: 991px) {
   .sidebar {
     border: none;
+    min-height: unset;
     .sidebar-menu {
       li {
         a {
@@ -273,16 +286,24 @@
         }
       }
     }
+    .sidebar-nav{
+      display: none;
+    }
+    .toggle-btn{
+      display: block;
+    }
   }
 }
+
 @media all and (max-width: 768px) {
   .content {
-    .page-title-big{
+    .page-title-big {
       font-size: 32px;
       line-height: 46px;
     }
   }
 }
+
 @media all and (max-width: 576px) {
   .content {
     padding: 35px 10px;
@@ -292,14 +313,14 @@
         width: 100%;
       }
     }
-    .button{
+    .button {
       min-width: 270px;
       margin: 0 auto;
     }
-    .table-overflow{
+    .table-overflow {
       overflow-x: scroll;
       overflow-y: visible;
-      table{
+      table {
         width: 576px;
       }
     }

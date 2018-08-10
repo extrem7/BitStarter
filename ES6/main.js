@@ -109,28 +109,50 @@ function scroll() {
 }
 
 function particles() {
-    particlesJS.load('particles-js', 'js/particles.json', function () {
+    /* particlesJS.load('particles-js', 'js/particles.json', function () {
 
-        console.log('callback - particles.js config loaded');
-    });
+         console.log('callback - particles.js config loaded');
+     });
     particlesJS.load('particles-js-footer', 'js/particles.json', function () {
 
-        console.log('callback - particles.js config loaded');
-    });
+         console.log('callback - particles.js config loaded');
+     });*/
 }
 
 function header() {
     $('.header .toggle-btn').click(() => {
         $('.header .menu-nav').slideToggle();
-        $('.toggle-btn').toggleClass('active');
+        $('.header .toggle-btn').toggleClass('active');
+    });
+    $('.sidebar .toggle-btn').click(() => {
+        $('.sidebar .sidebar-nav').slideToggle();
+        $('.sidebar .toggle-btn').toggleClass('active');
     });
 }
 
+function fixedHeader() {
+    if (window.innerWidth > 991) {
+        $(window).scroll(() => {
+            let $header = $('.header-wrapper');
+            if (window.pageYOffset > 45 && !$header.hasClass('fixed-top')) {
+                $header.addClass('fixed-top');
+                $('.main').css('padding-top', $header.height() + 70)
+            } else if (window.pageYOffset < 45 && $header.hasClass('fixed-top')) {
+                $header.removeClass('fixed-top');
+                $('.main').css('padding-top', 0)
+            }
+        });
+    }
+}
+
 $(function () {
-    touchSwipe();
-    scroll();
-    particles();
+    if ($('body').hasClass('home')) {
+        touchSwipe();
+        scroll();
+        particles();
+    }
     header();
+    fixedHeader();
     new TariffCalculator(1300, 100, 3000);
     $('.kpi').waypoint(() => {
         counter();

@@ -10,15 +10,20 @@
 <header class="header">
     <div class="header-container container d-flex align-items-center flex-column flex-sm-row justify-content-sm-between">
         <a href="/" class="logo">
-            <img src="img/logo.png" alt="">
+            <img src="../img/logo.png" alt="">
             <p>bitstarter</p>
         </a>
-        <nav>
+        <button class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="menu-nav">
             <ul class="header-menu">
-                <li><a href="../">ГЛАВНАЯ</a></li>
-                <li><a href="../#about">О ПРОЕКТЕ</a></li>
-                <li><a href="../#how">КАК ЗАРАБОТАТЬ</a></li>
-                <li><a href="../#social">КОНТАКТЫ</a></li>
+                <li><a href="" class="active">ГЛАВНАЯ</a></li>
+                <li><a href="#about">О ПРОЕКТЕ</a></li>
+                <li><a href="#how">КАК ЗАРАБОТАТЬ</a></li>
+                <li><a href="#social">КОНТАКТЫ</a></li>
             </ul>
         </nav>
         <nav class="user-nav">
@@ -34,7 +39,12 @@
                 <p class="title">Ваш баланс</p>
                 <p class="count"><b>12 357.00</b> руб</p>
             </div>
-            <nav>
+            <button class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="sidebar-nav">
                 <ul class="sidebar-menu">
                     <li>
                         <a href="index.html" class="active"><span class="icon"><img src="../img/cabinet/strongbox.png"
@@ -74,6 +84,75 @@
         </div>
     </div>
 </main>
+<footer class="footer">
+    <div id="particles-js-footer" class="particles-js"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <p class="title title-big">BITSTARTER</p>
+                <p class="about-site">
+                    Сайт работает в часовом поясе GMT+3 Заявки на выплаты осуществляются в рабоче время
+                    <br><br>
+                    Минимальная сумма вывода 200 рублей. Авто вывод - 1000 рублей в сутки
+                    <br><br>
+                    <a href="">info@bitstarter.com</a><br>
+                    Все права защищены.
+                </p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="title">Последние посты</p>
+                <article>
+                    <p class="article-title">Введен в эксплуатацию пул майнеров ANTMINER E3</p>
+                    <p class="date">ИЮНЬ 25, 2018</p>
+                </article>
+                <div class="article-hr"></div>
+                <article>
+                    <p class="article-title">Введен в эксплуатацию пул майнеров ANTMINER E3</p>
+                    <p class="date">ИЮНЬ 25, 2018</p>
+                </article>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="title">Быстрые ссылки</p>
+                <ul class="short-links">
+                    <li><a href="">► Важная информация</a></li>
+                    <li><a href="">► Часто задаваемые вопросы</a></li>
+                    <li><a href="">► Безопасность</a></li>
+                    <li><a href="">► Отзывы клиентов</a></li>
+                    <li><a href="">► Онлайн поддержка</a></li>
+                    <li><a href="">► Как инвестировать и заработать</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <p class="title">Крипто новости</p>
+                <article>
+                    <p class="time">1 час назад</p>
+                    <p class="article-text">
+                        Китай начал строительство фермы на атомной станции @<b>Statruply</b> #china #crypto #bitcoin</p>
+                </article>
+                <div class="article-hr"></div>
+                <article>
+                    <p class="time">1 час назад</p>
+                    <p class="article-text">
+                        Китай начал строительство фермы на атомной станции @<b>Statruply</b> #china #crypto #bitcoin</p>
+                </article>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-wrap justify-content-center justify-content-sm-between">
+            <nav>
+                <ul class="menu">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#how">Как заработать</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="#social">Контакты</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Разработано в <b>BITSTARTER</b> © 2014</p>
+        </div>
+    </div>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -81,6 +160,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
         integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-<script src="../ES6/cabinet.js"></script>
+<script src="../ES6/main.js"></script>
 </body>
 </html>

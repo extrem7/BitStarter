@@ -6,34 +6,46 @@
     <title>BitStarter</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
+<style>
+    .main .fixed-top {
+        background: url(img/main-canvas-background.png) no-repeat top center;
+        border-bottom: 1px solid #5078dc;
+    }
+
+    .main .fixed-top .header {
+        padding: 5px 0;
+    }
+</style>
 <body class="home">
 <main class="main" role="main">
-    <div class="container">
-        <header class="header">
-            <div class="header-container d-flex align-items-center flex-column flex-sm-row justify-content-sm-between">
-                <a href="/" class="logo">
-                    <img src="img/logo.png" alt="">
-                    <p>bitstarter</p>
-                </a>
-                <button class="toggle-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="menu-nav">
-                    <ul class="header-menu">
-                        <li><a href="" class="active">ГЛАВНАЯ</a></li>
-                        <li><a href="#about">О ПРОЕКТЕ</a></li>
-                        <li><a href="#how">КАК ЗАРАБОТАТЬ</a></li>
-                        <li><a href="#social">КОНТАКТЫ</a></li>
-                    </ul>
-                </nav>
-                <nav class="user-nav">
-                    <a href="" data-toggle="modal" data-target="#user-forms">ВХОД</a>
-                    <a href="" class="sign-up" data-toggle="modal" data-target="#user-forms">РЕГИСТРАЦИЯ</a>
-                </nav>
-            </div>
-        </header>
+    <div class="header-wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header-container d-flex align-items-center flex-column flex-sm-row justify-content-sm-between">
+                    <a href="/" class="logo">
+                        <img src="img/logo.png" alt="">
+                        <p>bitstarter</p>
+                    </a>
+                    <button class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="menu-nav">
+                        <ul class="header-menu">
+                            <li><a href="" class="active">ГЛАВНАЯ</a></li>
+                            <li><a href="#about">О ПРОЕКТЕ</a></li>
+                            <li><a href="#how">КАК ЗАРАБОТАТЬ</a></li>
+                            <li><a href="#social">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="user-nav">
+                        <a href="" data-toggle="modal" data-target="#user-forms">ВХОД</a>
+                        <a href="" class="sign-up" data-toggle="modal" data-target="#user-forms">РЕГИСТРАЦИЯ</a>
+                    </nav>
+                </div>
+            </header>
+        </div>
     </div>
     <div id="main-slider" data-interval="5000" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
